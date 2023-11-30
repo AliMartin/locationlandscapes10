@@ -1,0 +1,94 @@
+uuid: 4dc30d17-98e4-460f-a63c-f7b6b2ea0baa
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.garden.body
+    - field.field.node.garden.field_designer
+    - field.field.node.garden.field_designer_website
+    - field.field.node.garden.field_hover_image
+    - field.field.node.garden.field_image
+    - field.field.node.garden.field_show_garden
+    - field.field.node.garden.field_video
+    - node.type.garden
+  module:
+    - slick
+    - user
+id: node.garden.default
+targetEntityType: node
+bundle: garden
+mode: default
+content:
+  field_image:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      class: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      layout: ''
+      view_mode: slick
+      cache: 0
+      background: true
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      use_theme_field: false
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      svg_inline: false
+      svg_fill: false
+      svg_sanitize: true
+      svg_sanitize_remote: false
+      svg_hide_caption: false
+      svg_attributes: ''
+      skin: fullscreen
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_designer: true
+  field_designer_website: true
+  field_hover_image: true
+  field_show_garden: true
+  field_video: true
+  langcode: true
+  links: true

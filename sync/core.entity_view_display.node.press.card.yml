@@ -1,0 +1,43 @@
+uuid: dc0a3cec-26b8-4ee2-9edf-17dccf1edbee
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.press.body
+    - field.field.node.press.field_hover_image
+    - field.field.node.press.field_pdf
+    - field.field.node.press.field_publication_date
+    - image.style.card
+    - node.type.press
+  module:
+    - image_hover_effects
+    - user
+id: node.press.card
+targetEntityType: node
+bundle: press
+mode: card
+content:
+  field_hover_image:
+    type: image_hover_effects_image
+    label: visually_hidden
+    settings:
+      image_style: card
+      image_link: content
+      hover_effect: fade_in_up
+      hover_text: '[node:title]'
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_pdf: true
+  field_publication_date: true
+  langcode: true

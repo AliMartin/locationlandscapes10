@@ -1,0 +1,127 @@
+#block-locationlandscapes-main-menu {
+
+  > ul {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center !important;
+
+    /* Underline styles */
+    a {
+      display: block;
+      position: relative;
+      padding: 0 0 5px 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    a.is-active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Scale from center */
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+      transition: opacity 400ms, transform 400ms;
+      opacity: 1;
+      transform: scale(0);
+      transform-origin: center;
+    }
+
+    a:hover::after,
+    a:focus::after {
+      opacity: 1;
+      transform: translate3d(0, 0.2em, 0);
+      transform: scale(1);
+    }
+  }
+}
+
+
+@media only screen and (max-width : 991px) {
+  #block-locationlandscapes-main-menu {
+    > ul {
+      gap: 25px;
+
+      /* Underline styles */
+      a {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+
+#site-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  a {
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: $teal;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width : 767px) {
+  #site-menu a span,
+  .menu-container {
+    display: none;
+  }
+
+  #site-menu {
+    gap: 15px;
+  }
+
+  #site-menu a {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #site-menu i {
+    margin: 0;
+  }
+}
+
+
+
+// Hide the Home menu icon when things get really small
+@media only screen and (max-width : 449px) {
+  #site-menu > div:first-of-type {
+    display: none;
+  }
+}
