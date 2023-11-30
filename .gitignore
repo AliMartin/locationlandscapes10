@@ -30,7 +30,7 @@
 # Ignore drupal core (if not versioning drupal sources)
 /core
 /libraries
-/modules/*
+/modules/contrib/*
 /themes/README.txt
 /themes/contrib/*
 /profiles/README.txt
@@ -61,4 +61,5 @@
 # Allow these files
 !/.cpanel.yml
 !/sync/*
+!/modules/custom/*
 !/sites/default/settings.local.php
