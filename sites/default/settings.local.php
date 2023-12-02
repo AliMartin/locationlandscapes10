@@ -9,6 +9,8 @@ $settings['file_temp_path'] = DRUPAL_ROOT . '/tmp';
 $settings['trusted_host_patterns'] = [
   '^locationlandscapes\.com$',
   '^.+\.locationlandscapes\.com$',
+  '^locationlandscapes\.hyperluminal\.co\.uk$',
+  '^.+\.locationlandscapes\.hyperluminal\.co\.uk$',
   '^locationlandscapes10\.ddev\.site$',
   '^.+\.locationlandscapes10\.ddev\.site$',
 ];
