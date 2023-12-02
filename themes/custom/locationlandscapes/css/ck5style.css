@@ -13949,6 +13949,14 @@ a > .ck-content code {
 .ck-content #contact-panel h4, .ck-content #contact-panel .h4 {
   margin-top: 40px;
 }
+.ck-content #bali-footer .bali-logo {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.ck-content #bali-footer .bali-text {
+  font-size: smaller;
+}
 .ck-content nav.tabs ul {
   justify-content: center;
 }
