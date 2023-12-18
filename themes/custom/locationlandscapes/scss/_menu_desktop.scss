@@ -6,7 +6,8 @@
     justify-content: center !important;
 
     /* Underline styles */
-    a {
+    a,
+    span.nav-link {
       display: block;
       position: relative;
       padding: 0 0 5px 0;
@@ -48,6 +49,32 @@
       transform: scale(1);
     }
   }
+
+  > ul ul.dropdown-menu {
+    z-index: 10;
+    background-color: $gray-dark;
+    border: inherit;
+    border-radius: 0;
+    margin: 0;
+    padding: 6px 20px;
+    transform: translate3d(-20px, 39px, 0px) !important;
+
+    li {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    a {
+      display: revert;
+      color: $white;
+      margin: 0;
+
+      &.is-active,
+      &:hover {
+        background-color: inherit;
+      }
+    }
+  }
 }
 
 
@@ -56,11 +83,15 @@
     > ul {
       gap: 25px;
 
-      /* Underline styles */
-      a {
+      a,
+      span.nav-link {
         font-size: 18px;
         line-height: 18px;
       }
+    }
+
+    ul.dropdown-menu {
+      transform: translate3d(-20px, 38px, 0px) !important;
     }
   }
 }

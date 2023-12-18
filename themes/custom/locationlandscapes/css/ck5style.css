@@ -13984,7 +13984,7 @@ a > .ck-content code {
 }
 .ck-content header {
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 .ck-content header .header-container {
   display: flex;
@@ -14362,6 +14362,9 @@ a > .ck-content code {
 .ck-content body.page-node-type-front header .menu-container {
   background-color: rgba(0, 0, 0, 0.6);
 }
+.ck-content body.page-node-type-front .menu-container #block-locationlandscapes-main-menu .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .ck-content body.page-node-type-front .main-content > div > .region-content {
   padding-top: 70vh;
 }
@@ -14409,7 +14412,8 @@ a > .ck-content code {
   /* Underline styles */
   /* Scale from center */
 }
-.ck-content #block-locationlandscapes-main-menu > ul a {
+.ck-content #block-locationlandscapes-main-menu > ul a,
+.ck-content #block-locationlandscapes-main-menu > ul span.nav-link {
   display: block;
   position: relative;
   padding: 0 0 5px 0;
@@ -14446,14 +14450,38 @@ a > .ck-content code {
   transform: translate3d(0, 0.2em, 0);
   transform: scale(1);
 }
+.ck-content #block-locationlandscapes-main-menu > ul ul.dropdown-menu {
+  z-index: 10;
+  background-color: #404040;
+  border: inherit;
+  border-radius: 0;
+  margin: 0;
+  padding: 6px 20px;
+  transform: translate3d(-20px, 39px, 0px) !important;
+}
+.ck-content #block-locationlandscapes-main-menu > ul ul.dropdown-menu li {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.ck-content #block-locationlandscapes-main-menu > ul ul.dropdown-menu a {
+  display: revert;
+  color: #f2f2f2;
+  margin: 0;
+}
+.ck-content #block-locationlandscapes-main-menu > ul ul.dropdown-menu a.is-active, .ck-content #block-locationlandscapes-main-menu > ul ul.dropdown-menu a:hover {
+  background-color: inherit;
+}
 @media only screen and (max-width: 991px) {
   .ck-content #block-locationlandscapes-main-menu > ul {
     gap: 25px;
-    /* Underline styles */
   }
-  .ck-content #block-locationlandscapes-main-menu > ul a {
+  .ck-content #block-locationlandscapes-main-menu > ul a,
+.ck-content #block-locationlandscapes-main-menu > ul span.nav-link {
     font-size: 18px;
     line-height: 18px;
+  }
+  .ck-content #block-locationlandscapes-main-menu ul.dropdown-menu {
+    transform: translate3d(-20px, 38px, 0px) !important;
   }
 }
 .ck-content #site-menu {
