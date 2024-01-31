@@ -15353,13 +15353,19 @@ body.page-node-type-press .main-content .field--name-body {
   margin-top: 40px;
 }
 
+#bali-footer {
+  margin-top: 40px;
+}
 #bali-footer .bali-logo {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
+#bali-footer .bali-logo img {
+  max-width: 140px;
+}
 #bali-footer .bali-text {
-  font-size: smaller;
+  font-size: 13px;
 }
 
 nav.tabs ul {

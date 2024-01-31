@@ -360,12 +360,19 @@ body.page-node-type-press {
 // Bali logo on About page
 
 #bali-footer {
+
+  margin-top: 40px;
+
   .bali-logo {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+
+    img {
+      max-width: 140px;
+    }
   }
   .bali-text {
-    font-size: smaller;
+    font-size: 13px;
   }
 }
