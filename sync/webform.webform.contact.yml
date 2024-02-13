@@ -307,9 +307,9 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'tracey@locationlandscapes.com,julia@locationlandscapes.com'
       to_options: {  }
-      bcc_mail: ''
+      bcc_mail: info@alimartin.com
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
