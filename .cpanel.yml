@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/locationlandscapes.com
+    - export DEPLOYPATH=/home/hyperlum/locationlandscapes.com
     - /bin/cp -r * $DEPLOYPATH
