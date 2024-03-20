@@ -17,7 +17,7 @@ conditions:
     negate: false
     uuid: 76c9ba05-d432-4ddc-b40f-58bd3ede8a27
     context_mapping: {  }
-    pages: "/about\r\n/careers\r\n/contact"
+    pages: "/about\r\n/careers\r\n/contact\r\n/privacy"
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false
