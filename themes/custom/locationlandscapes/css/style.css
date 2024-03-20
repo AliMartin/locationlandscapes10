@@ -15523,7 +15523,7 @@ footer {
 
 #block-locationlandscapes-footercopyright {
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 #hyperluminal {
@@ -15578,6 +15578,21 @@ footer {
     flex-direction: column;
   }
 }
+#block-locationlandscapes-privacypolicy {
+  margin-bottom: 30px;
+}
+#block-locationlandscapes-privacypolicy p {
+  text-align: center;
+  font-size: smaller;
+  margin-bottom: 5px;
+}
+#block-locationlandscapes-privacypolicy p a {
+  color: #8c9266;
+}
+#block-locationlandscapes-privacypolicy p a:hover {
+  color: #669191;
+}
+
 .path-webform nav.tabs-primary,
 .page-node-type-webform nav.tabs-primary {
   margin: 1rem auto 2rem;

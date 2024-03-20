@@ -14107,7 +14107,7 @@ a > .ck-content code {
 }
 .ck-content #block-locationlandscapes-footercopyright {
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .ck-content #hyperluminal {
   text-align: center;
@@ -14158,6 +14158,20 @@ a > .ck-content code {
   .ck-content #block-locationlandscapes-newsletter .webform-submission-form {
     flex-direction: column;
   }
+}
+.ck-content #block-locationlandscapes-privacypolicy {
+  margin-bottom: 30px;
+}
+.ck-content #block-locationlandscapes-privacypolicy p {
+  text-align: center;
+  font-size: smaller;
+  margin-bottom: 5px;
+}
+.ck-content #block-locationlandscapes-privacypolicy p a {
+  color: #8c9266;
+}
+.ck-content #block-locationlandscapes-privacypolicy p a:hover {
+  color: #669191;
 }
 .ck-content .path-webform nav.tabs-primary,
 .ck-content .page-node-type-webform nav.tabs-primary {
