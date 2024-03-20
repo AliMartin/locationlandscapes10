@@ -15373,7 +15373,8 @@ nav.tabs ul {
 }
 
 .btn-primary,
-input.button {
+input.button,
+#sliding-popup button {
   background-color: #8c9266;
   color: #f2f2f2;
   text-decoration: none;
@@ -15382,14 +15383,19 @@ input.button {
   padding: 8px 16px;
   border-radius: 20px;
   height: 34px;
+  -webkit-appearance: inherit;
+  border: 1px solid #8c9266;
 }
 .btn-primary i,
-input.button i {
+input.button i,
+#sliding-popup button i {
   margin-right: 10px;
 }
 .btn-primary:hover, .btn-primary:focus,
 input.button:hover,
-input.button:focus {
+input.button:focus,
+#sliding-popup button:hover,
+#sliding-popup button:focus {
   color: #f2f2f2;
   background-color: #669191;
   border: 1px solid #669191;
@@ -16042,6 +16048,46 @@ body.page-node-type-front footer {
 }
 .mm-menu_theme-dark ul.mm-listview .mm-listitem_selected > .mm-listitem__text {
   background: #8c9266;
+}
+
+#sliding-popup {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+#sliding-popup #popup-text {
+  margin-bottom: 1rem;
+}
+#sliding-popup #popup-text h2, #sliding-popup #popup-text .h2 {
+  font-size: 1.6rem;
+}
+#sliding-popup #popup-text p {
+  margin-bottom: 0.5rem;
+}
+#sliding-popup #popup-text button {
+  border: inherit;
+  border-bottom: 1px dotted #f2f2f2;
+  background-color: inherit;
+  color: #f2f2f2;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: inherit;
+  height: inherit;
+}
+#sliding-popup #popup-text button:hover {
+  color: #8c9266;
+  padding: 0;
+  text-decoration: none;
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 1px dotted #8c9266;
+}
+#sliding-popup #popup-buttons {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

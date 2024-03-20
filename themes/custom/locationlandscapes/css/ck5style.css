@@ -13967,7 +13967,8 @@ a > .ck-content code {
   justify-content: center;
 }
 .ck-content .btn-primary,
-.ck-content input.button {
+.ck-content input.button,
+.ck-content #sliding-popup button {
   background-color: #8c9266;
   color: #f2f2f2;
   text-decoration: none;
@@ -13976,14 +13977,19 @@ a > .ck-content code {
   padding: 8px 16px;
   border-radius: 20px;
   height: 34px;
+  -webkit-appearance: inherit;
+  border: 1px solid #8c9266;
 }
 .ck-content .btn-primary i,
-.ck-content input.button i {
+.ck-content input.button i,
+.ck-content #sliding-popup button i {
   margin-right: 10px;
 }
 .ck-content .btn-primary:hover, .ck-content .btn-primary:focus,
 .ck-content input.button:hover,
-.ck-content input.button:focus {
+.ck-content input.button:focus,
+.ck-content #sliding-popup button:hover,
+.ck-content #sliding-popup button:focus {
   color: #f2f2f2;
   background-color: #669191;
   border: 1px solid #669191;
@@ -14603,6 +14609,45 @@ a > .ck-content code {
 }
 .ck-content .mm-menu_theme-dark ul.mm-listview .mm-listitem_selected > .mm-listitem__text {
   background: #8c9266;
+}
+.ck-content #sliding-popup {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+.ck-content #sliding-popup #popup-text {
+  margin-bottom: 1rem;
+}
+.ck-content #sliding-popup #popup-text h2, .ck-content #sliding-popup #popup-text .h2 {
+  font-size: 1.6rem;
+}
+.ck-content #sliding-popup #popup-text p {
+  margin-bottom: 0.5rem;
+}
+.ck-content #sliding-popup #popup-text button {
+  border: inherit;
+  border-bottom: 1px dotted #f2f2f2;
+  background-color: inherit;
+  color: #f2f2f2;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: inherit;
+  height: inherit;
+}
+.ck-content #sliding-popup #popup-text button:hover {
+  color: #8c9266;
+  padding: 0;
+  text-decoration: none;
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 1px dotted #8c9266;
+}
+.ck-content #sliding-popup #popup-buttons {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
