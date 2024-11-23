@@ -1,6 +1,5 @@
 _core:
   default_config_hash: VBIZ2klsa-wrUk3pFOgIi3avMLFro6A0nFNYc35MvNQ
-langcode: en-gb
 ebt_core_mobile_breakpoint: '640'
 ebt_core_tablet_breakpoint: '1020'
 ebt_core_desktop_breakpoint: '1320'

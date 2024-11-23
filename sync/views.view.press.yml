@@ -133,7 +133,7 @@ display:
           exposed: false
           draggable_views_reference: 'gardens:page_2'
           draggable_views_null_order: after
-          draggable_views_pass_arguments: false
+          draggable_views_pass_arguments: 0
       arguments: {  }
       filters:
         status:
@@ -503,7 +503,7 @@ display:
           exposed: false
           draggable_views_reference: 'press:page_2'
           draggable_views_null_order: after
-          draggable_views_pass_arguments: false
+          draggable_views_pass_arguments: 0
         created:
           id: created
           table: node_field_data
@@ -719,7 +719,7 @@ display:
           exposed: false
           draggable_views_reference: this
           draggable_views_null_order: after
-          draggable_views_pass_arguments: false
+          draggable_views_pass_arguments: 0
         created:
           id: created
           table: node_field_data

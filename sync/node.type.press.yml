@@ -11,7 +11,7 @@ third_party_settings:
 name: Press
 type: press
 description: 'Add <em>press releases</em> to the website.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 0
 display_submitted: false

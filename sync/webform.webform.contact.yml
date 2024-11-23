@@ -2,14 +2,9 @@ uuid: ecbec918-6c74-492b-9956-171ccd7a9c32
 langcode: en-gb
 status: open
 dependencies:
-  module:
-    - honeypot
   enforced:
     module:
       - webform
-third_party_settings:
-  honeypot:
-    honeypot: true
 _core:
   default_config_hash: _je-MWeeJB6gfm6iECiqjcyNetfMFbn-YIInYwZ1gIk
 weight: 0
@@ -309,7 +304,7 @@ handlers:
         - completed
       to_mail: 'tracey@locationlandscapes.com,julia@locationlandscapes.com,charles@locationlandscapes.com,info@locationlandscapes.com'
       to_options: {  }
-      bcc_mail: info@alimartin.com
+      bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }

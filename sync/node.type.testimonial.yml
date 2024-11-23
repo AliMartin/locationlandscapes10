@@ -11,7 +11,7 @@ third_party_settings:
 name: Testimonial
 type: testimonial
 description: 'Add a <em>testimonial</em> to the website.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

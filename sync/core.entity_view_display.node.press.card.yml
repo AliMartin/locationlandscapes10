@@ -8,10 +8,9 @@ dependencies:
     - field.field.node.press.field_hover_image
     - field.field.node.press.field_pdf
     - field.field.node.press.field_publication_date
-    - image.style.card
     - node.type.press
   module:
-    - image_hover_effects
+    - image
     - user
 id: node.press.card
 targetEntityType: node
@@ -19,17 +18,15 @@ bundle: press
 mode: card
 content:
   field_hover_image:
-    type: image_hover_effects_image
-    label: visually_hidden
+    type: image
+    label: above
     settings:
-      image_style: card
-      image_link: content
-      hover_effect: fade_in_up
-      hover_text: '[node:title]'
+      image_link: ''
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   links:
     settings: {  }
