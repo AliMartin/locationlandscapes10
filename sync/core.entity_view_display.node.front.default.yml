@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.front.field_image
     - node.type.front
   module:
-    - slick
+    - splide
     - user
 id: node.front.default
 targetEntityType: node
@@ -15,7 +15,7 @@ bundle: front
 mode: default
 content:
   field_image:
-    type: slick_media
+    type: splide_media
     label: hidden
     settings:
       caption:
@@ -28,9 +28,12 @@ content:
       overlay: ''
       title: ''
       vanilla: false
+      by_delta: -1
       layout: ''
-      view_mode: slick
+      view_mode: default
       cache: 0
+      admin_uri: '/admin/structure/types/manage/front/display?ajax_form=1&_wrapper_format=drupal_ajax'
+      use_lb: false
       background: true
       box_caption: ''
       box_caption_custom: ''
@@ -57,22 +60,24 @@ content:
       skin: fullscreen
       overridables:
         arrows: '0'
+        pagination: '0'
         autoplay: '0'
-        dots: '0'
-        draggable: '0'
-        infinite: '0'
-        mouseWheel: '0'
+        autoWidth: '0'
+        autoHeight: '0'
+        drag: '0'
+        wheel: '0'
         randomize: '0'
-        variableWidth: '0'
       thumbnail: ''
-      optionset_thumbnail: ''
-      skin_thumbnail: ''
-      thumbnail_caption: ''
+      pagination_text: ''
+      optionset_nav: ''
+      skin_nav: ''
+      nav_caption: ''
       thumbnail_effect: ''
-      thumbnail_position: ''
+      navpos: ''
       override: false
       skin_arrows: ''
       skin_dots: ''
+      pagination_pos: ''
       preserve_keys: false
       visible_items: null
     third_party_settings: {  }

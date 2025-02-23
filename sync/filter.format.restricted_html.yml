@@ -2,8 +2,7 @@ uuid: 1db927a9-f601-4073-9704-3bd38599ff87
 langcode: en-gb
 status: true
 dependencies:
-  module:
-    - slick
+  module: {  }
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
 name: 'Restricted HTML'
@@ -32,11 +31,3 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  slick_filter:
-    id: slick_filter
-    provider: slick
-    status: false
-    weight: 4
-    settings:
-      optionset: default
-      media_switch: ''

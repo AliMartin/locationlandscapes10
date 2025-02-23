@@ -1,14 +1,14 @@
-uuid: 35d34333-ba29-4b21-bcf0-980e4b1fdba8
+uuid: fbdaa5bf-be63-4ddf-9934-e1d72103164e
 langcode: en-gb
 status: true
 dependencies:
   enforced:
     module:
-      - slick
+      - splide
 _core:
-  default_config_hash: oQDRoEzxaj4cm4zDtSwzPCliteaNmv5gC-ugL9H_MV0
-name: slick_media
-label: 'Slick media'
+  default_config_hash: z4PnjPISXcMPUkdthI8edEjwfNEyBXmEkSlmGlVYe8Q
+name: splide_media
+label: 'Splide media'
 effects:
   4b434ce0-90cc-44c3-9423-35d7cccc7d93:
     uuid: 4b434ce0-90cc-44c3-9423-35d7cccc7d93

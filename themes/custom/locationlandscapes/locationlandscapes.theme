@@ -30,3 +30,27 @@ function locationlandscapes_theme_suggestions_page_alter(array &$suggestions, ar
 	$suggestions[] = 'page__' . $node->bundle();
   }
 }
+
+
+use Drupal\Core\Render\Markup;
+
+/**
+ * Adds the page title to the body classes
+ * Implements hook_preprocess_HOOK() for html templates.
+ */
+function locationlandscapes_preprocess_html(array &$variables) {
+    // Get the current route.
+    $route_match = \Drupal::routeMatch();
+
+    // Attempt to retrieve the page title.
+    $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route_match->getRouteObject());
+
+    if ($title) {
+        // Convert title to a safe class name (lowercase, hyphens instead of spaces, no special characters).
+        $class = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $title));
+        $class = trim($class, '-');
+
+        // Add the class to the body.
+        $variables['attributes']['class'][] = 'page-title-' . $class;
+    }
+}
