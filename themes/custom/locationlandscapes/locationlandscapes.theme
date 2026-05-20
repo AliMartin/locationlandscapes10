@@ -34,23 +34,24 @@ function locationlandscapes_theme_suggestions_page_alter(array &$suggestions, ar
 
 use Drupal\Core\Render\Markup;
 
-/**
- * Adds the page title to the body classes
- * Implements hook_preprocess_HOOK() for html templates.
- */
 function locationlandscapes_preprocess_html(array &$variables) {
-    // Get the current route.
     $route_match = \Drupal::routeMatch();
-
-    // Attempt to retrieve the page title.
     $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route_match->getRouteObject());
 
     if ($title) {
-        // Convert title to a safe class name (lowercase, hyphens instead of spaces, no special characters).
+        // title_resolver can return a render array rather than a plain string.
+        if (is_array($title)) {
+            $title = \Drupal::service('renderer')->renderPlain($title);
+        }
+
+        // Strip any remaining HTML tags (e.g. from #markup).
+        $title = strip_tags((string) $title);
+
         $class = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $title));
         $class = trim($class, '-');
 
-        // Add the class to the body.
-        $variables['attributes']['class'][] = 'page-title-' . $class;
+        if ($class) {
+            $variables['attributes']['class'][] = 'page-title-' . $class;
+        }
     }
 }
